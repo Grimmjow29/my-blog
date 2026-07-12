@@ -15,26 +15,12 @@ export default defineConfig({
 	},
 	fonts: [
 		{
-			provider: fontProviders.local(),
-			name: 'Atkinson',
-			cssVariable: '--font-atkinson',
+			provider: fontProviders.google(),
+			name: 'Ubuntu',
+			cssVariable: '--font-ubuntu',
+			weights: [300, 400, 500, 700],
+			styles: ['normal', 'italic'],
 			fallbacks: ['sans-serif'],
-			options: {
-				variants: [
-					{
-						src: ['./src/assets/fonts/atkinson-regular.woff'],
-						weight: 400,
-						style: 'normal',
-						display: 'swap',
-					},
-					{
-						src: ['./src/assets/fonts/atkinson-bold.woff'],
-						weight: 700,
-						style: 'normal',
-						display: 'swap',
-					},
-				],
-			},
 		},
 	],
 });

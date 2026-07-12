@@ -1,29 +1,29 @@
 :root {
-	--accent: #a78bfa;
-	--accent-dark: #7c3aed;
-	--accent-glow: #6d28d9;
+	--accent: #7c8cf8;
+	--accent-dark: #4f5bd5;
+	--accent-glow: #3b5bdb;
 	--black: 232, 230, 245;
 	--gray: 148, 143, 179;
 	--gray-light: 45, 41, 66;
 	--gray-dark: 210, 206, 230;
-	--surface: 18, 15, 28;
-	--surface-2: 26, 22, 40;
+	--surface: 15, 16, 28;
+	--surface-2: 22, 23, 40;
 	--bg-gradient: radial-gradient(
 			ellipse 80% 50% at 50% -10%,
-			rgba(109, 40, 217, 0.25),
+			rgba(59, 91, 219, 0.28),
 			transparent
 		),
 		radial-gradient(
 			ellipse 60% 40% at 90% 10%,
-			rgba(37, 99, 235, 0.12),
+			rgba(37, 99, 235, 0.2),
 			transparent
 		);
 	--box-shadow:
 		0 2px 6px rgba(0, 0, 0, 30%), 0 8px 24px rgba(0, 0, 0, 40%),
-		0 16px 32px rgba(109, 40, 217, 15%);
+		0 16px 32px rgba(59, 91, 219, 15%);
 }
 body {
-	font-family: var(--font-atkinson);
+	font-family: var(--font-ubuntu);
 	margin: 0;
 	padding: 0;
 	text-align: left;
