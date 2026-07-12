@@ -1,31 +1,39 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--accent: #a78bfa;
+	--accent-dark: #7c3aed;
+	--accent-glow: #6d28d9;
+	--black: 232, 230, 245;
+	--gray: 148, 143, 179;
+	--gray-light: 45, 41, 66;
+	--gray-dark: 210, 206, 230;
+	--surface: 18, 15, 28;
+	--surface-2: 26, 22, 40;
+	--bg-gradient: radial-gradient(
+			ellipse 80% 50% at 50% -10%,
+			rgba(109, 40, 217, 0.25),
+			transparent
+		),
+		radial-gradient(
+			ellipse 60% 40% at 90% 10%,
+			rgba(37, 99, 235, 0.12),
+			transparent
+		);
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 2px 6px rgba(0, 0, 0, 30%), 0 8px 24px rgba(0, 0, 0, 40%),
+		0 16px 32px rgba(109, 40, 217, 15%);
 }
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background-color: rgb(var(--surface));
+	background-image: var(--bg-gradient);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: rgb(var(--black));
 	font-size: 20px;
 	line-height: 1.7;
 }
